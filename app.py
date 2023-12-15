@@ -10,10 +10,10 @@ if image:
   image = np.array(image)
   infomation = DeepFace.analyze(image)
   age = information['age']
-  emotion = information['dominant_emotion']
-  race = information['dominant_race']
-  gender = information['gender']
+  #emotion = information['dominant_emotion']
+  #race = information['dominant_race']
+  #gender = information['gender']
   st.write('Your age is  ' ,age)
-  st.write('You are from  ',race)
-  st.write('Your gender is ',gender)
-  st.write('You are feeling very  ',emotion)
+  #st.write('You are from  ',race)
+  #st.write('Your gender is ',gender)
+  #st.write('You are feeling very  ',emotion)
