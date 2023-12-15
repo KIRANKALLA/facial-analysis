@@ -4,7 +4,7 @@ import streamlit as st
 from deepface import DeepFace
 import numpy as np
 
-image = st.file_loader('Take your photo')
+image = st.file_uploader('Take your photo')
 if image:
   st.image(image)
   image = np.array(image)
