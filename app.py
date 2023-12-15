@@ -8,7 +8,7 @@ image = st.file_uploader('Take your photo')
 if image:
   st.image(image)
   image = np.array(image)
-  information = DeepFace.analyze(image,actions = ['age'])
+  information = DeepFace.analyze(image)
   age = information[0]['age']
   #emotion = information['dominant_emotion']
   #race = information['dominant_race']
