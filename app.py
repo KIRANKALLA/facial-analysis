@@ -9,7 +9,7 @@ if image:
   st.image(image)
   image = np.array(image)
   information = DeepFace.analyze(image,actions = ['age'])
-  age = information['age']
+  age = information[0]['age']
   #emotion = information['dominant_emotion']
   #race = information['dominant_race']
   #gender = information['gender']
